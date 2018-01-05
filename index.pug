@@ -17,7 +17,15 @@ html(lang="ru")
 		link(rel="stylesheet" href="css/jquery.fancybox.min.css")
 		link(rel="stylesheet" href="css/styles.css")
 	body
-
+		#main_screen
+			include pug/header
+			include pug/first_screen_section
+		include pug/mail_section
+		include pug/risons
+		include pug/plan
+		include pug/author
+		include pug/testimonials
+		include pug/footer
 		include pug/scripts
 		<!--BEGIN JIVOSITE CODE-->
 		//script
