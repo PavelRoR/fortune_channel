@@ -1,2 +1,1 @@
-# astro
 # fortune_channel
