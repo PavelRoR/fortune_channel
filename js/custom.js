@@ -22,7 +22,7 @@ $(document).ready(function () {
 			$(".span_phone", this).html("Введите свой номер телефона и мы напомним вам о начале интенсива").removeClass("hide");
 			/* $(this).attr("onsubmit", "return true;"); */
 			if (pVal) {
-				window.open("https://mastervision.su/astro-star-magic/bonus.html");
+				window.open("https://mastervision.su/veda-fortune-channel/bonus.html");
 				$('.span_phone', this).html('Ваш номер <strong>' + pVal + '</strong> зарегистрирован!');
 			}
 		});
