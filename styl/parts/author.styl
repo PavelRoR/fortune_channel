@@ -1,65 +1,54 @@
 #author
-	background-image: url(../img/about_back.jpg)
+	h3
+		position relative
+		color: #fffefe
+		background-color h3_brown
+		width 100%
+		padding: 42px 0
+		&:before
+		&:after
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: lines
+			position: absolute
+			left: 0
+			right 0
+		&:before
+			top: 10px
+		&:after
+			bottom: 10px
+.veda_wrap
+	background-image: url(../img/about_bg.jpg)
 	background-position: center top
 	background-size: cover
 	background-repeat no-repeat
 	width 100%
-	h3
-	&:after
-		margin-bottom: 35px
-	h5
-		font-size: 20px;
-		font-family: "OswaldMedium", Arial;
-		color: rgb(65, 184, 234);
-		line-height: 1.65;
-		margin-bottom: 12px
-#moon
-	display block
-	margin: 0 auto 35px
-.author_wrapper
-	border: 1px solid #555555
-	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.05);
-	overflow hidden
-	margin-bottom: 75px
-	img
-		position relative
-		margin-right: 55px
-		float left
-		left 0
-		bottom: -50px
+	padding-bottom: 70px
+	a.button
+		min-width: 300px;
+#veda_about
+	display: none
 .author_caption
-	padding: 50px 25px
+	width: 650px
+	float: right
+	margin: 65px 0 5px;
 	h4
-		font-size: 27px;
-		font-family: "OswaldMedium", Arial;
-		color: #41b8ea
-		line-height: 1.222;
-		margin-bottom: 20px
+		font-size: 37px;
+		font-family: 'RobotoBoldCondensed', sans-serif
+		color pr_yellow
+		margin-bottom: 25px
 	p
-		font-size: 16px;
-		font-family: "OpenSansRegular", arial;
-		color: #fff
+		font-size: 18px;
+		font-family: "RobotoRegular", sans-serif;
+		color: #fefefd
 		line-height: 1.6
-		margin-bottom: 0
-.lovely_dir
-	display: flex
-	align-items: center
-	justify-content: space-around
-	li
-		color #41b8ea
-		font-size: 16px;
-		font-family: "OpenSansRegular", arial;
-		line-height: 1.2;
-		padding-left: 0px;
-		span 
-			color #fff
-			margin-left: -5px;
-			letter-spacing: -0.5px;
-.education
-	.lovely_dir
-		display block
-		margin-left: 15px;
-		li
-			margin-bottom: 18px
-			padding-left: 15px;
+		margin-bottom: 24px
+#licenses
+	.col-md-3
+		height: 228px
+		display: table
+		a
+			display: table-cell
+			vertical-align: middle
+			text-align: center
