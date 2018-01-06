@@ -1,66 +1,157 @@
 #plan
-    background-image url(../img/plan_back.jpg)
+    background-image url(../img/plan_bg.jpg)
     background-position: center top
     background-size: cover
     background-repeat no-repeat
     width: 100%
+    padding-bottom: 100px
+    h3
+        position relative
+        color: #fffefe
+        background-color h3_brown
+        width 100%
+        padding: 42px 0
+        margin-bottom: 80px
+        &:before
+        &:after
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: lines
+            position: absolute
+            left: 0
+            right 0
+        &:before
+            top: 10px
+        &:after
+            bottom: 10px
+    .container
+        width: 1066px
 .plan_wrapper
-    display: table
-    border 1px solid #555555
-    border-radius: 10px;
-    background-color: rgba(249, 249, 249, 0.051);
-    width: 1135px
-    height 420px
-    padding: 40px
-    margin-bottom: 40px
-.img_wrapper
-    display: table-cell
-    vertical-align: middle
-    width: 273px
+    border 1px solid 
+    border-radius: 5px;
+    width: 947px
+    height 330px
+    padding: 25px
+    margin-bottom: 60px
+    background-color #fff
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.24);
+    position relative
+    clear both
+    .plan_bonus
+        font-size: 21px;
+        font-family: 'RobotoRegular', sans-serif;
+        position: absolute
+        bottom: 30px
+        strong
+            font-size: 27px
+            font-family: 'RobotoBoldCondensed', sans-serif
+    .day_number
+        width: 284px
+        height: 284px
+        background-image url(../img/day_numbers.png)
+        background-repeat no-repeat
+        background-position 0 0
+        position: absolute
+        top 23px
 .plan_caption
-    padding-left: 90px
     h4
-        font-size: 22px;
-        font-family: "OswaldMedium", Arial;
-        text-align: left;
-        margin-bottom: 24px;
-        line-height: 0.8;
+        font-size: 27px;
+        font-family: 'RobotoBoldCondensed', sans-serif
+        line-height: 1
+        position relative
+        small
+            font-family: 'RobotoItalic', sans-serif;
+            font-size: 20px
+            line-height: 33px
+            display: block
+            font-weight: 100
     ul
-        margin-left: 5px
+        margin 15px 0 0 48px
         li
-            font-size: 16px;
-            font-family: "OpenSansRegular", arial;
-            margin-bottom: 9px;
-            line-height: 1.2;
+            font-size: 20px;
+            font-family: 'RobotoRegular', sans-serif;
+            margin-bottom: 10px;
+            line-height: 1.1;
             span
-                color: rgba(255, 255, 255, 0.7)
+                color: h3_brown
 .plan_wrapper
     &:nth-of-type(1)
+        float: right
+        border-color: pr_green
+        .day_number
+            left: -142px
         .plan_caption
+            padding-left: 195px
             h4
             li
-                color: #716654
-.plan_wrapper
+                color: pr_green
+        .plan_bonus
+            left 220px
+            strong
+                color: pr_green
     &:nth-of-type(2)
+        border-color: pr_red
+        height: 360px
+        .day_number
+            left: auto;
+            right: -142px;
+            top:  38px
+            background-position-x: -284px
         .plan_caption
+            padding-left: 25px
             h4
             li
-                color: #06b091
-.plan_wrapper
+                color: pr_red
+        .plan_bonus
+            left: 50px
+            strong
+                color: pr_red
     &:nth-of-type(3)
+        float: right
+        border-color: pr_orange
+        .day_number
+            left: -142px
+            background-position-x: -568px
         .plan_caption
+            padding-left: 195px
             h4
             li
-                color: #ad7441
-.plan_wrapper
+                color: pr_orange
+        .plan_bonus
+            left 220px
+            strong
+                color: pr_orange
     &:nth-of-type(4)
+        border-color: pr_blue
+        .day_number
+            left: auto;
+            right: -142px;
+            background-position-x: -852px
         .plan_caption
+            padding-left: 25px
             h4
             li
-                color: #b4373a
-.plan_wrapper
+                color: pr_blue
+        .plan_bonus
+            left: 50px
+            strong
+                color: pr_blue
     &:nth-of-type(5)
+        float: right
+        border-color: pr_brown
+        margin-bottom: 0
+        .day_number
+            left: -142px
+            background-position-x: -1136px
         .plan_caption
+            padding-left: 195px
             h4
             li
-                color: #0488e1
+                color: pr_brown
+        .plan_bonus
+            left 220px
+            strong
+                color: pr_brown
+            &:first-child
+                bottom: 60px
