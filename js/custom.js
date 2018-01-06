@@ -37,10 +37,9 @@ $(document).ready(function () {
 	});
 	/* Слайдер Причин */
 	$('.risons-crsl-items').carousel({
-		itemMinWidth: 300,
 		autoRotate: false,
 		speed: 600,
-		visible: 3
+		visible: 4
 	});
 	/* Слайдер с Видео */
 	$('.video-crsl-items').carousel({

@@ -1,48 +1,99 @@
 #risons
-    background-image url(../img/second_screen_back.jpg)
+    background-image url(../img/second_screen_bg.jpg)
     background-repeat no-repeat
     background-position: center top
     background-size: cover
+    padding: 90px 0
+    h3
+        color: h3_brown
+        margin-bottom: 80px
 #risons_slider
     .crsl-item
-        padding-top: 45px
+        padding-top: 52px
         .item
-            border: 1px solid #555555
+            border: 1px solid 
             border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.051);
+            background-color: #fff
             width: 100%
-            height: 308px;
+            height: 270px;
             text-align: center
-            padding: 0 10px 10px
+            padding: 0 5px
             margin-bottom: 35px
-            img
-                margin: -55px auto 10px
-            h5
-                font-size: 20px;
-                font-family: "OswaldRegular", Arial;
-                color: #88d6e7
-                line-height: 1.3; 
-                margin-bottom: 20px
+            position relative
+            box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.24);
+            .risson_pic
+                width: 104px
+                height: 104px
+                position: absolute
+                margin: 0 auto
+                left: 0
+                right 0
+                top: -52px
+                background-image: url('../img/rissons_numbers.png')
+                background-repeat no-repeat
+                background-position 0 0
+                &.second_risson
+                    background-position-x: -104px
+                &.third_risson
+                    background-position-x: -208px
+                &.fourth_risson
+                    background-position-x: -312px
+                &.fifth_risson
+                    background-position-x: -416px
+                &.sixth_risson
+                    background-position-x: -520px
+                &.seventh_risson
+                    background-position-x: -624px
+                &.eighth_risson
+                    background-position-x: -728px
+                &.ninth_risson
+                    background-position-x: -832px
+                &.tenth_risson
+                    background-position-x: -936px
+                &.eleventh_risson
+                    background-position-x: -1040px
             p
-                font-size: 16px;
-                font-family: "OpenSansRegular", arial;
-                color: rgba(255, 255, 255, 0.6);
-                line-height: 1.375;
-.slidernav
-    width: 162px
-    margin: 0 auto
-    a
-        vertical-align: middle
-        text-align: center;
-        font-size: 32px;
-        border-radius: 50%;
-        background-color: #288ba0
-        box-shadow: 2.5px 4px 18px 0.72px rgba(0, 0, 0, 0.5);
-        color: #ffffff
-        width: 51px
-        height: 51px
-        margin: 0 15px
-        &:first-child
-            float left
-        &:last-child
-            float: right
+                font-size: 20px;
+                font-family: 'RobotoBoldCondensed', sans-serif;
+                line-height: 26px
+                &:first-of-type
+                    margin: 77px auto 20px
+                    color: p_brown
+            &.red
+                border-color: pr_red
+                p:last-of-type
+                    color: pr_red
+            &.green
+                border-color: pr_green
+                p:last-of-type
+                    color: pr_green
+            &.orange
+                border-color: pr_orange
+                p:last-of-type
+                    color: pr_orange
+            &.blue
+                border-color: pr_blue
+                p:last-of-type
+                    color: pr_blue
+    .slidernav
+        width: 162px
+        margin: 0 auto
+        a
+            vertical-align: middle
+            text-align: center;
+            font-size: 32px;
+            border-radius: 50%;
+            background-image: url(../img/arrows.png) 
+            background-repeat no-repeat
+            background-position 0 0
+            width: 41px
+            height: 27px
+            margin: 0 15px
+            &:hover
+                background-position-y: -27px
+            &:first-child
+                float left
+
+            &:last-child
+                float: right
+                background-position-x: -41px
