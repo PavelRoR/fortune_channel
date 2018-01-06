@@ -1,38 +1,11 @@
-#video_testimonials
-    #video_slider.video-crsl-items(data-navigation="v-testm-btns")
-        .crsl-wrap.row
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="jNXEn1bfXI0")
-                    img(src="img/video_1.jpg", alt="Видео отзыв")         
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="uTA36j5T2Ms")
-                    img(src="img/video_2.jpg", alt="Видео отзыв")       
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="j5JsPTfE_68")
-                    img(src="img/video_3.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="n3jIoubJecc")
-                    img(src="img/video_4.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="656xgFi4E8g")
-                    img(src="img/video_5.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="JYtyKvY3_xU")
-                    img(src="img/video_6.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="/k4jzkVBDtK0")
-                    img(src="img/video_7.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="jwsoAUhUCOU")
-                    img(src="img/video_8.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="BJfeuqI2JTQ")
-                    img(src="img/video_9.jpg", alt="Видео отзыв")
-            .crsl-item.col-md-3
-                .video_wrapper(data-youtube="sVgMTVwuV1s")
-                    img(src="img/video_10.jpg", alt="Видео отзыв")
-                   
-        nav.slidernav
-            #v-testm-btns
-                a(href="javascript:void(0);" class="previous") &larr;
-                a(href="javascript:void(0);" class="next") &rarr;
+.carousel.slide(data-ride="carousel")#carousel_video
+    .carousel-inner(role="listbox")
+        .item.active
+            .carousel-caption.video_wrapper(data-youtube="YiG6T6GSWBs")
+                img(src="img/video_testim.jpg" alt="Видео-отзыв 1" ).video_testimonial
+        .item
+            .carousel-caption.video_wrapper(data-youtube="Ijx7PDX8BVw")
+                img(src="img/video_testim.jpg" alt="Видео-отзыв 2" ).video_testimonial
+    ol.carousel-indicators
+        li(data-target="#carousel_video" data-slide-to="0" class="active")
+        li(data-target="#carousel_video" data-slide-to="1")

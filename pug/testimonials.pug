@@ -1,5 +1,10 @@
 section#testimonials
     .container
         h3 Отзывы учеников
-        include video_testims
-        include text_testims
+        .row
+            .col-md-6
+                include text_testims
+            .col-md-6
+                include video_testims
+        .clearfix
+    include footer

@@ -41,22 +41,11 @@ $(document).ready(function () {
 		speed: 600,
 		visible: 4
 	});
-	/* Слайдер с Видео */
-	$('.video-crsl-items').carousel({
-		itemMinWidth: 300,
-		autoRotate: false,
-		speed: 300,
-		visible: 1
-	});
-	/* Слайдер с Текстовыми отзывами */
-	
-	$('.text-crsl-items').carousel({
-		itemMinWidth: 300,
-		autoRotate: false,
-		speed: 300,
-		visible: 1,
-		itemEqualHeight: false,
-	});
+	/* Слайдер отзывов*/
+$(".carousel").carousel({
+	interval: 5000,
+	pause: "hover"
+});
 	/* Галерея сертификатов */
 	$(function () {
 		$("[data-fancybox]").fancybox({
