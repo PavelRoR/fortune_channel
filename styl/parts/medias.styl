@@ -139,7 +139,9 @@
     .plan_wrapper:first-of-type
         margin-top: 100px
     .plan_wrapper:first-of-type .plan_caption
+    .plan_wrapper:nth-of-type(2) .plan_caption
     .plan_wrapper:nth-of-type(3) .plan_caption
+    .plan_wrapper:nth-of-type(4) .plan_caption
     .plan_wrapper:nth-of-type(5) .plan_caption
         padding-left: 0
     .plan_wrapper .plan_bonus
@@ -157,3 +159,77 @@
         margin: 0 auto 20px;
     #licenses .col-md-3 a
         display block
+@media screen and (max-width: 768px)
+    .contacts a
+        display: inline-block
+    #first_screen_section .container .video_wrapper
+        width: 80%
+    #plan .container
+        width: 100%
+    .author_caption
+        width: auto
+        float: none
+    .carousel-caption.video_wrapper::before
+        padding-top: 48.25%
+@media screen and (max-width: 650px)
+    .plan_wrapper, .plan_wrapper:nth-of-type(2)
+        width: 100%
+    #licenses .col-md-3
+        width: 50%
+@media screen and (max-width: 481px)
+    #logo img
+        width: 200px
+    .contacts .fa + span
+        font-size: 14px
+    #pre
+        font-size: 22px
+        margin-top: 10px;
+    h1
+    h3
+        font-size: 36px
+        line-height: 39px
+    h2
+        font-size: 28px;
+        line-height: 28px
+        margin: 20px 0
+    #first_screen_section .container .video_wrapper
+        width: 100%
+    .button
+        width: 100%
+        margin-top: 25px
+    .email-block input, .phone-block input
+    .form_newsletter .button
+        width: 360px
+    #risons
+        padding: 50px 0
+        h3
+            margin-bottom: 50px
+    #risons_slider .crsl-item .item
+        height: auto
+        width: 100%
+        padding-bottom: 50px
+    #mail_section .col-md-3 .infront_submit, #mail_section .col-md-3 .span_phone
+        text-align: center
+        font-size: 16px
+        margin-bottom: 20px
+    #plan
+        padding-bottom: 50px
+    .author_caption h4
+        font-size: 32px
+    .author_caption
+        margin-top: 50px
+    .veda_wrap .button
+        width: 90%
+    .carousel-caption.video_wrapper
+        width: 100%
+    .carousel-caption.video_wrapper::before
+        padding-top: 47.25%
+    .soc_buttons
+        max-width: 100%
+    #bonus #footer, #hw #footer
+        padding: 20px 0
+    #bonus #footer h5, #hw #footer h5
+        font-size: 22px
+    #footer p, #footer p + a
+        font-size: 12px
+        line-height: 1.2
