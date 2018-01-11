@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   /* Работа формы */
+	/* Работа формы */
 	$(function () {
 		$("body").on("submit", ".form_newsletter", function (e) {
 			var message = "Укажите значения всех обязательных для заполнения полей!";
@@ -42,10 +42,10 @@ $(document).ready(function () {
 		visible: 4
 	});
 	/* Слайдер отзывов*/
-$(".carousel").carousel({
-	interval: 5000,
-	pause: "hover"
-});
+	$(".carousel").carousel({
+		interval: 5000,
+		pause: "hover"
+	});
 	/* Галерея сертификатов */
 	$(function () {
 		$("[data-fancybox]").fancybox({
@@ -60,9 +60,15 @@ $(".carousel").carousel({
 		var a = $(this).attr("data-youtube");
 		$(this).html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1" frameborder="0" class="video_testimonial" allowfullscreen></iframe>')
 	});
+	/* План курса */
+	$( "#tabs" ).tabs()
+	$("#silver_tabs").tabs();
+	$("#gold_tabs").tabs();
+	$("#platinum_tabs").tabs();
+	$("#vip_tabs").tabs();
 
 
 	/* Конец документа */
-    
+
 
 });
